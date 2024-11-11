@@ -1,0 +1,53 @@
+img{width: 440px;}
+.div1{
+    width: 700px;
+    border: 2px solid rgba(179, 179, 179, 0.356) ;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 10px;
+    overflow:hidden ;
+
+}
+.div2{
+    background-color: rgba(192, 192, 192, 0.404);
+    height: auto;
+    
+}
+.div3{
+    direction: rtl;
+    
+}
+.btn1{
+    font-size: 20px;
+    padding: 5px;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.597);
+
+    
+}
+fieldset{
+    display: inline;
+    width: 28%;
+    border-radius: 8px;
+}
+input{
+    border: hidden;
+}
+input:focus-visible{
+    border: none;
+    box-sizing: unset;
+    outline: none;
+}
+.btn2{
+    background-color: rgba(25, 121, 231, 0.541);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 7px 50px;
+    margin-left: 25px;
+    margin-top: 40px;
+    cursor: pointer;
+
+}
