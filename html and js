@@ -1,0 +1,72 @@
+<head>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="text-align: center;"><img src="logo.webp" alt="bitbarg" title="sarafi hamid"></div>
+        <div class="div1">
+            <div class="div2">
+                <div class="div3">
+                    <button onclick="btn1()" id="btn1" style="border-bottom: 2px solid rgba(0, 132, 255, 0.267); background-color: rgba(8, 119, 245, 0.363);" class="btn1">خرید</button>
+                    <button onclick="btn2()" id="btn2" class="btn1">فروش</button>
+                    <button onclick="btn3()" id="btn3" class="btn1">تبدیل</button>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <fieldset>
+                        <legend>انتخاب ارز</legend>
+                        <input id="in1" type="text" value="بیت کوین (BTC)">
+                    </fieldset>
+                    <fieldset>
+                        <legend>واحد </legend>
+                        <input onchange="a()" value="1" id="in2" type="number">
+                    </fieldset>
+                    <fieldset>
+                        <legend> تومان</legend>
+                        <input id="in3" type="number">
+                    </fieldset>
+                </div>
+            </div>
+            <button id="btn4" class="btn2">خرید ارز</button>
+            <br>
+            <br>
+            <br>
+        </div>
+<script>
+var c=1538270496;
+function a(){
+    var b=document.getElementById("in2").value
+document.getElementById("in3").value=b*c;
+}
+function btn1(){
+    document.getElementById("btn4").innerHTML="خرید ارز"
+    document.getElementById("btn1").style="border-bottom: 2px solid rgba(0, 132, 255, 0.267); background-color: rgba(8, 119, 245, 0.363);"
+    document.getElementById("btn2").style="background-color: rgba(240, 248, 255, 0);border: none;cursor: pointer;color: rgba(0, 0, 0, 0.597);"
+    document.getElementById("btn3").style="background-color: rgba(240, 248, 255, 0);border: none;cursor: pointer;color: rgba(0, 0, 0, 0.597);"
+}
+function btn2(){
+    document.getElementById("btn4").innerHTML="فروش ارز"
+    document.getElementById("btn2").style="border-bottom: 2px solid rgba(0, 132, 255, 0.267); background-color: rgba(8, 119, 245, 0.363);"
+    document.getElementById("btn1").style="background-color: rgba(240, 248, 255, 0);border: none;cursor: pointer;color: rgba(0, 0, 0, 0.597);"
+    document.getElementById("btn3").style="background-color: rgba(240, 248, 255, 0);border: none;cursor: pointer;color: rgba(0, 0, 0, 0.597);"
+}
+function btn3(){
+    document.getElementById("btn4").innerHTML="تبدیل ارز"
+    document.getElementById("btn3").style="border-bottom: 2px solid rgba(0, 132, 255, 0.267); background-color: rgba(8, 119, 245, 0.363);"
+    document.getElementById("btn2").style="background-color: rgba(240, 248, 255, 0);border: none;cursor: pointer;color: rgba(0, 0, 0, 0.597);"
+    document.getElementById("btn1").style="background-color: rgba(240, 248, 255, 0);border: none;cursor: pointer;color: rgba(0, 0, 0, 0.597);"
+}
+
+
+
+</script>
+
+</body>
